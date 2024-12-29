@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- FXML file for the Jukebox UI -->
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.demo2.JukeboxController">
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <ListView fx:id="songListView" prefHeight="200"/>
+            <HBox spacing="10">
+                <TextField fx:id="titleField" promptText="Song Title"/>
+                <TextField fx:id="artistField" promptText="Artist"/>
+            </HBox>
+            <HBox spacing="10">
+                <Button fx:id="addButton" text="Add Song" onAction="#handleAddSong"/>
+                <Button fx:id="removeButton" text="Remove Song" onAction="#handleRemoveSong"/>
+                <Button fx:id="playButton" text="Play Song" onAction="#handlePlaySong"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
